@@ -1,0 +1,124 @@
+/*This is the CSS for the Index page body, navbar,div container*/
+body{
+    font-family: "Inter", sans-serif; /* Default font for the whole page */
+    font-size: 17px;
+    line-height: 1.7;
+}
+nav, .nav-list{
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+    justify-content: right;
+    /*position: sticky;*/
+    /*top: 0;*/
+}
+.nav-link{
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+
+/*This is the CSS for the headings,*/
+h1, h2, h3{
+    font-family: Playfair Display, serif; /* Specific font for headings */
+}
+h2{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    color: midnightblue;
+    font-size: 22px;
+    font-weight: normal;
+}
+span{
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+.skills-list{
+    list-style: square outside;
+}
+
+
+
+
+/*This is the CSS for the different sections*/
+.intro-section{
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.blog-header {
+    text-align: center;
+    padding: 40px 0;
+}
+.blog-post{
+    gap: 20px;         /* Adds space between the posts */
+    justify-content: center; /* Centers the posts on the page */
+}
+.blog-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+.blog-article{
+    flex: 1;               /* Allows articles to grow/shrink equally */
+    min-width: 300px;      /* Prevents them from getting too skinny on mobile */
+    max-width: 400px;      /* Prevents them from getting too wide on huge screens */
+    display: flex;         /* Makes the inside of the article a flexbox too */
+    flex-direction: column; /* Keeps the title, image, and text stacked vertically */
+    border: 2px solid lightgray;
+    padding: 20px;
+    border-radius:8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.blog-article a{
+    display:inline-block;
+    margin-top: auto; /* Pushes the link to the bottom of the article */
+    padding: 8px 16px;
+    background-color: #1a1a2e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+.blog-article:hover{
+    transform: translateY(-6px); /* Slightly lifts the card on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.blog-article a:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+.blog-article img {
+    max-width: 100%; /* Ensures the logo doesn't exceed the width of the article */
+    max-height: 100px; /* Sets a fixed height for the logo */
+    object-fit: contain; /* Ensures the logo fits within the specified dimensions without distortion */
+    align-self: center;    /* Centers the logo inside the article */
+    border-bottom: 2px solid #ddd; /* Adds a subtle border below the logo */
+    margin-bottom: 10px; /* Adds space between the logo and the title */
+}
+.article-author {
+    font-style: normal;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+}
+time {
+    display: block;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 12px;
+}

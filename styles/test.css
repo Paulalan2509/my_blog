@@ -1,0 +1,26 @@
+/*h1{*/
+/*    color: indianred;*/
+/*    font-size: 40px;*/
+/*    font-weight: bold;*/
+/*    text-decoration: underline;*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+
+/*.blog-article {*/
+/*    !* keep existing rules, add: *!*/
+/*    border-radius: 8px;*/
+/*    transition: transform 0.2s ease, box-shadow 0.2s ease;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.blog-article:hover {*/
+/*    transform: translateY(-6px);*/
+/*    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+
+/*img {*/
+/*    display: block;  !* Removes the tiny gap at the bottom of images *!*/
+/*    margin: 10px 0;  !* Adds some vertical breathing room *!*/
+/*}*/

@@ -7,12 +7,10 @@
         <meta name="description" content="Paul's journey from HTML basics to Fullstack Python mastery.">
 
         <title>Code & Grow</title>
-        <style>
-            .blog-header{
-                text-align: center;
-            }
-        </style>
 
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="icon" href="media/gulp-brands-solid-full.svg" type="image/x-icon">
     </head>
 
     <!--The main content of my blog-->
@@ -26,56 +24,62 @@
                 <li class="nav-list-item">
                     <a class="nav-link" href="about.html">About Me</a>
                 </li>
+
+                <li class="nav-list-item">
+                    <a class="nav-link" href="service.html">My Services</a>
+                </li>
             </ul>
         </nav>
 
         <main>
-            <header class="blog-header"> <h1>Paul Alain | Fullstack AI Engineering Journey</h1> </header>
+            <div class="container">
+                <section class="intro-section" id="intro">
+                    <h2>Welcome to my learning Journey</h2>
+                    <p>This blog documents my rigorous transition into the world of <span>Fullstack AI Engineering</span>. Join me as I navigate the complexities of modern software development, sharing the technical insights, daily challenges, and key triumphs encountered along the way. </p>
+                    <p>Fullstack Engineering is a multifaceted discipline where diverse fields intersect to create powerful, intelligent applications. My roadmap to mastery covers the following core pillars:</p>
+                        <ul class="skills-list">
+                            <li> <strong> Frontend Development:</strong> Crafting responsive user interfaces using HTML5, CSS3, and modern JavaScript frameworks.</li>
+                            <li> <strong> System Design:</strong> Mastering the blueprint of applications through UI/UX principles, UML modeling, and scalable System Architecture.</li>
+                            <li> <strong>Backend Engineering:</strong> Building robust server-side logic using Python and high-performance web frameworks like Django or FastAPI. </li>
+                            <li> <strong>Database Architecture:</strong> Designing and managing data persistence across both Relational (SQL) and Non-Relational (NoSQL) systems. </li>
+                            <li> <strong>AI & Machine Learning Integration:</strong> Implementing intelligent features by bridging traditional software with ML models and AI workflows. </li>
+                        </ul>
+                </section>
 
-            <section id="home">
-                <h2>Welcome to my learning Journey</h2>
-                <p>This blog documents my rigorous transition into the world of <strong>Fullstack AI Engineer.</strong> Join me as I navigate the complexities of modern software development, sharing the technical insights, daily challenges, and key triumphs encountered along the way. </p>
-                <p>Fullstack Engineering is a multifaceted discipline where diverse fields intersect to create powerful, intelligent applications. My roadmap to mastery covers the following core pillars:</p>
-                    <ul>
-                        <li> <strong> Frontend Development:</strong> Crafting responsive user interfaces using HTML5, CSS3, and modern JavaScript frameworks.</li>
-                        <li> <strong> System Design:</strong> Mastering the blueprint of applications through UI/UX principles, UML modeling, and scalable System Architecture.</li>
-                        <li> <strong>Backend Engineering:</strong> Building robust server-side logic using Python and high-performance web frameworks like Django or FastAPI. </li>
-                        <li> <strong>Database Architecture:</strong> Designing and managing data persistence across both Relational (SQL) and Non-Relational (NoSQL) systems. </li>
-                        <li> <strong>AI & Machine Learning Integration:</strong> Implementing intelligent features by bridging traditional software with ML models and AI workflows. </li>
-                    </ul>
-            </section>
 
-            <section id="blog">
-                <h2>Latest Voyage Logs</h2>
+                <section class="blog-post" id="blog">
+                    <h2>Latest Voyage Logs</h2>
 
-                <article>
-                    <h3>Mastering the Skeleton: HTML5</h3>
-                    <address>By <strong>Paul Alain</strong></address>
-                    <img src="media/html-l.png" alt="HTML Official Logo" width="200">
-                    <p>Embarking on the HTML Odyssey: My First Steps into Web Development</p>
-                    <time datetime="2026-04-03">April 3, 2026</time>
-                    <p><a href="https://frontendmasters.com/courses/web-development-v3/html-project/" target="_blank">View Frontend Masters Course</a></p>
-                </article>
+                    <div class="blog-cards">
+                        <article class="blog-article">
+                            <h3 class="blog-article-header">Mastering HTML5</h3>
+                            <p class="article-author">By <strong>Paul Alain</strong></p>
+                            <img src="media/html-l.png" alt="HTML Official Logo">
+                            <p>Embarking on the HTML Odyssey: Learning HTML5 which is the skeleton of the web</p>
+                            <time datetime="2026-04-03">April 3, 2026</time>
+                            <p><a href="https://frontendmasters.com/courses/web-development-v3/html-project/" target="_blank">View Frontend Masters Course</a></p>
+                        </article>
 
-                 <article>
-                    <h3>The Art of Styling: CSS3</h3>
-                     <address>By <strong>Paul Alain</strong></address>
-                    <img src="media/css.png" alt="CSS Official Logo" width="200">
-                    <p>Exploring the Box Model, layouts, and how to make a site responsive without frameworks.</p>
-                    <time datetime="2026-04-08">April 8, 2026</time>
-                    <p><a href="https://frontendmasters.com/courses/css-grid/" target="_blank">View Frontend Masters Course</a></p>
-                </article>
+                         <article class="blog-article">
+                            <h3 class="blog-article-header">The Art of Styling: CSS3</h3>
+                             <p class="article-author">By <strong>Paul Alain</strong></p>
+                            <img src="media/CSS-Logo-2011.png" alt="CSS Official Logo">
+                            <p>Exploring the Box Model, layouts, and how to make a site responsive without frameworks.</p>
+                            <time datetime="2026-04-08">April 8, 2026</time>
+                            <p><a href="https://frontendmasters.com/courses/css-grid/" target="_blank">View Frontend Masters Course</a></p>
+                        </article>
 
-                <article>
-                    <h3>Learning JavaScript</h3>
-                    <address>By <strong>Paul Alain</strong></address>
-                    <img src="media/javascript_logo.jpg" alt="Javascript Official Logo" width="200">
-                    <p>Transitioning from static pages to interactive ones by learning DOM manipulation and logic flow.</p>
-                    <time datetime="2026-04-27">April 27, 2026</time>
-                    <p><a href="https://frontendmasters.com/courses/getting-started-javascript-v3/" target="_blank">View Frontend Masters Course</a></p>
-                </article>
-            </section>
-
+                        <article class="blog-article">
+                            <h3 class="blog-article-header">Learning JavaScript</h3>
+                            <p class="article-author">By <strong>Paul Alain</strong></p>
+                            <img src="media/javascript-logo-javascript-icon-transparent-free-png.webp" alt="Javascript Official Logo">
+                            <p>Transitioning from static pages to interactive ones by learning DOM manipulation and logic flow.</p>
+                            <time datetime="2026-04-27">April 27, 2026</time>
+                            <p><a href="https://frontendmasters.com/courses/getting-started-javascript-v3/" target="_blank">View Frontend Masters Course</a></p>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <hr>
@@ -88,7 +92,7 @@
 
              <nav>
                  <small>
-                     <a href="#home">Back to top</a>
+                     <a href="#intro">Back to top</a>
                  </small>
              </nav>
         </footer>
